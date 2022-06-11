@@ -35,29 +35,26 @@ Process:
 2.) Transform
 
 ### new cars
+1. Due to the new cars dataframe identifying the make, model and year in a single column, we had to split the string into new columns
 
-    1. Due to the new cars dataframe identifying the make, model and year in a single column, we had to split the string into new columns
-
-    2. [images/1.png](Original Column) [images/2.png](New Columns) 
-
-    3. create new dataframe with new cars with columns we needed 
+    ![Original Column](images/1.png) [New Columns](images/2.png) 
+     
+2. create new dataframe with new cars with columns we needed 
 
 ### used cars
+1. identify and create a new dataframe with only the 2019 used car sales price
+                [Filter by 2019](images/3.png)
 
-    1. identify and create a new dataframe with only the 2019 used car sales price
-                [images/3.png](Filter by 2019)
-
-    2. create new dataframe with new cars with columns we needed
+2. create new dataframe with new cars with columns we needed
 
 ### formatting df
+1. create formatting function which formats price columns of both df to add dollars signs and 2 decimal points. remove commas
 
-    1. create formatting function which formats price columns of both df to add dollars signs and 2 decimal points. remove commas
+    1a. the new cars df 'msrp' column is a string, therefore remove any non-integer values, convert to float, apply our formmating function
 
-        1a. the new cars df 'msrp' column is a string, therefore remove any non-integer values, convert to float, apply our formmating function
+2. be sure to drop the null values
 
-    2. be sure to drop the null values
-
-    3. set up dataframes 
+3. set up dataframes 
 
         3a. rename column names that have corresponding names
 
@@ -73,11 +70,11 @@ Process:
 
 3.) Load
 
-    1. connect to local database
+1. connect to local database
 
-    2. convert the dataframes into a compatible database
+2. convert the dataframes into a compatible database
 
-    3. reconfirm that the databases have been made
+3. reconfirm that the databases have been made
 
 
 Conclusions: this was fun
