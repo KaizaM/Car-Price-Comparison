@@ -23,6 +23,24 @@ Begin the extraction process by importing our dependencies, used cars, and new c
 End the ETL process by loading the used car sales and new car sales dataframes from jupyter notebook into a local database that is sql compatible (ie Postgresql or MongoDB). We selected Postgresql due to the dataframes being relational and majority of transformation being completed in jupyter notebook. Convert those dataframes into a brand new database named "used_cars" and "new_cars" respectively. End the process by reconfirming that your databases have been created.
 
 --------------------------------------------------------------------------------------------------------------
+## Instructions:
+
+1. Install pandas and sqlalchemy into your computer
+
+2. Go to Kaggle websites listed above in Sources
+
+3. Create a folder titled 'Resources' and copy the two csv files
+
+4. Open Data_ETL using jupyter notebook after activating environment
+
+5. Open Postgresql
+
+6. Enter username and password in line 20
+
+7. Run all kernals in jupyter notebook
+
+
+--------------------------------------------------------------------------------------------------------------
 ## Process:
 
 ### Extract (Import all dependencies)
@@ -61,15 +79,15 @@ End the ETL process by loading the used car sales and new car sales dataframes f
 
 3. Set up the dataframes 
 
-        3a. Rename column names that have corresponding names
+    3a. Rename column names that have corresponding names
 
-        3b. Sort values by Make, Model, Model_Year and ascending, ascending and descending order respectivley  
+    3b. Sort values by Make, Model, Model_Year and ascending, ascending and descending order respectivley  
 
-        3c. Convert make and model columns to uppercase 
+    3c. Convert make and model columns to uppercase 
         
-        3d. Add a new column named 'Used/New' and fill in respective dataframe
+    3d. Add a new column named 'Used/New' and fill in respective dataframe
 
-        3e. Print to check
+    3e. Print to check
 
 
 
@@ -81,4 +99,6 @@ End the ETL process by loading the used car sales and new car sales dataframes f
 
 3. Reconfirm that the databases have been made
 
+-------------------------------------------------------------------------------------------------------------------------------
 
+© 2022 Richard Kim Kai Murata Project, a Georgia Tech Bootcamp project, All Rights Reserved
