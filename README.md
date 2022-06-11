@@ -6,7 +6,7 @@
 ## Objective: 
 Each member of our project collected two data sources of new and used car sales from the year 2019. We then follow the process of extracting, transforming, and loading our data frames into a database for further analysis.
 
---------------------------------------------------------------------------------------------------------------
+
 ## Sources: 
 
 We collected two datasets from Kaggle that provides details for new and used car sales from the year 2019. Filtering out car sales and their models is the primary goal. 
@@ -16,13 +16,14 @@ The type of final production the databases are loaded into is relational.
 https://www.kaggle.com/datasets/prassanth/new-cars-price-2019?select=New_cars_price.csv
 https://www.kaggle.com/datasets/tsaustin/us-used-car-sales-data?resource=download
 
---------------------------------------------------------------------------------------------------------------
+
+## Project Summary:
 
 Begin the extraction process by importing our dependencies, used cars, and new cars csv files into pandas. Convert them into readable dataframes. We then follow our extraction process by transforming and organizing our columns from both dataframes into the desired format that lists out new columns named "Make, Model, Model_Year, Model_Details and Used/New." 
 
 End the ETL process by loading the used car sales and new car sales dataframes from jupyter notebook into a local database that is sql compatible (ie Postgresql or MongoDB). We selected Postgresql due to the dataframes being relational and majority of transformation being completed in jupyter notebook. Convert those dataframes into a brand new database named "used_cars" and "new_cars" respectively. End the process by reconfirming that your databases have been created.
 
---------------------------------------------------------------------------------------------------------------
+
 ## Instructions:
 
 1. Install pandas and sqlalchemy into your computer
@@ -40,8 +41,8 @@ End the ETL process by loading the used car sales and new car sales dataframes f
 7. Run all kernals in jupyter notebook
 
 
---------------------------------------------------------------------------------------------------------------
-## Process:
+
+## ETL Process:
 
 ### Extract (Import all dependencies)
 
