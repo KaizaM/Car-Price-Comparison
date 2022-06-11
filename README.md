@@ -1,9 +1,10 @@
-# New/Used 2019 Car Prices - (ETL) Extract, Transform, Load 
+# (ETL) Extract, Transform, Load - New/Used 2019 Car Prices
 
-### Group Members - Richard Kim, Kai Murata
+#### Group Members - Richard Kim, Kai Murata
 
 
-## Objective: Each member of our project collected two data sources of new and used car sales from the year 2019. We then follow the process of extracting, transforming, and loading our data frames into a database for further analysis.
+## Objective: 
+Each member of our project collected two data sources of new and used car sales from the year 2019. We then follow the process of extracting, transforming, and loading our data frames into a database for further analysis.
 
 --------------------------------------------------------------------------------------------------------------
 ## Sources: 
@@ -12,8 +13,8 @@ We collected two datasets from Kaggle that provides details for new and used car
 
 The type of final production the databases are loaded into is relational.
 
-    * https://www.kaggle.com/datasets/prassanth/new-cars-price-2019?select=New_cars_price.csv
-    * https://www.kaggle.com/datasets/tsaustin/us-used-car-sales-data?resource=download
+https://www.kaggle.com/datasets/prassanth/new-cars-price-2019?select=New_cars_price.csv
+https://www.kaggle.com/datasets/tsaustin/us-used-car-sales-data?resource=download
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -22,32 +23,34 @@ Begin the extraction process by importing our dependencies, used cars, and new c
 End the ETL process by loading the used car sales and new car sales dataframes from jupyter notebook into a local database that is sql compatible (ie Postgresql or MongoDB). We selected Postgresql due to the dataframes being relational and majority of transformation being completed in jupyter notebook. Convert those dataframes into a brand new database named "used_cars" and "new_cars" respectively. End the process by reconfirming that your databases have been created.
 
 --------------------------------------------------------------------------------------------------------------
-Process:
+## Process:
+
 1.) Extract (import all dependencies)
 
-    1. import 'used_car_sales.csv' from the Resources folder
+    1. Import 'used_car_sales.csv' from the Resources folder
 
-    2. read the csv into a dataframe and then print
+    2. Read the csv into a dataframe and then print
 
-    3. repeat the steps above using 'New_cars_price.csv'
+    3. Repeat the steps above using 'New_cars_price.csv'
 
 
 2.) Transform
 
-### new cars
-1. Due to the new cars dataframe identifying the make, model and year in a single column, we had to split the string into new columns
+### New Cars
+1. Due to the new cars dataframe identifying the **make**, __model__ and **year** in a single column, we had to split the string into new columns
 
-    ![Original Column](images/1.png) ![New Columns](images/2.png) 
+    ![Original Column](images/1.png) This is the original column            
+    ![New Columns](images/2.png) These are the newly created columns
      
-2. create new dataframe with new cars with columns we needed 
+2. Create new dataframe with new cars with columns we needed 
 
-### used cars
+### Used Cars
 1. identify and create a new dataframe with only the 2019 used car sales price
                 ![Filter by 2019](images/3.png)
 
 2. create new dataframe with new cars with columns we needed
 
-### formatting df
+### Formatting Dataframes
 1. create formatting function which formats price columns of both df to add dollars signs and 2 decimal points. remove commas
 
     1a. the new cars df 'msrp' column is a string, therefore remove any non-integer values, convert to float, apply our formmating function
