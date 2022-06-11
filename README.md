@@ -37,13 +37,13 @@ Process:
 ### new cars
 1. Due to the new cars dataframe identifying the make, model and year in a single column, we had to split the string into new columns
 
-    ![Original Column](images/1.png) [New Columns](images/2.png) 
+    ![Original Column](images/1.png) ![New Columns](images/2.png) 
      
 2. create new dataframe with new cars with columns we needed 
 
 ### used cars
 1. identify and create a new dataframe with only the 2019 used car sales price
-                [Filter by 2019](images/3.png)
+                ![Filter by 2019](images/3.png)
 
 2. create new dataframe with new cars with columns we needed
 
