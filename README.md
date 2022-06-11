@@ -25,59 +25,60 @@ End the ETL process by loading the used car sales and new car sales dataframes f
 --------------------------------------------------------------------------------------------------------------
 ## Process:
 
-1.) Extract (import all dependencies)
+### Extract (Import all dependencies)
 
-    1. Import 'used_car_sales.csv' from the Resources folder
+1. Import 'used_car_sales.csv' from the Resources folder
 
-    2. Read the csv into a dataframe and then print
+2. Read the csv into a dataframe and then print
 
-    3. Repeat the steps above using 'New_cars_price.csv'
+3. Repeat the steps above using 'New_cars_price.csv'
 
 
-2.) Transform
+### Transform
 
-### New Cars
+#### New Cars
 1. Due to the new cars dataframe identifying the **make**, __model__ and **year** in a single column, we had to split the string into new columns
 
-    ![Original Column](images/1.png) This is the original column            
-    ![New Columns](images/2.png) These are the newly created columns
+    ![Original Column](images/1.png) 
+    This is the original column            
+    ![New Columns](images/2.png) 
+    These are the newly created columns
      
 2. Create new dataframe with new cars with columns we needed 
 
-### Used Cars
-1. identify and create a new dataframe with only the 2019 used car sales price
+#### Used Cars
+1. Identify and create a new dataframe with only the 2019 used car sales price
                 ![Filter by 2019](images/3.png)
 
-2. create new dataframe with new cars with columns we needed
+2. Create new dataframe with new cars with columns we need
 
-### Formatting Dataframes
-1. create formatting function which formats price columns of both df to add dollars signs and 2 decimal points. remove commas
+#### Formatting Dataframes
+1. Create formatting function which formats price columns of both df to add dollars signs and 2 decimal points. Remove commas
 
-    1a. the new cars df 'msrp' column is a string, therefore remove any non-integer values, convert to float, apply our formmating function
+    1a. The new cars df 'MSRP' column is a string, therefore remove any non-integer values, convert to **float**. Apply our formmating function
 
-2. be sure to drop the null values
+2. Be sure to drop the null values
 
-3. set up dataframes 
+3. Set up the dataframes 
 
-        3a. rename column names that have corresponding names
+        3a. Rename column names that have corresponding names
 
-        3b. sort values by make, model, model_year and ascending, ascending and descending order respectivley  
+        3b. Sort values by Make, Model, Model_Year and ascending, ascending and descending order respectivley  
 
-        3c. convert make and model columns to uppercase 
+        3c. Convert make and model columns to uppercase 
         
-        3d. add a new column named used/new and fill in respective df
+        3d. Add a new column named 'Used/New' and fill in respective dataframe
 
-        3e. print to check
-
-
-
-3.) Load
-
-1. connect to local database
-
-2. convert the dataframes into a compatible database
-
-3. reconfirm that the databases have been made
+        3e. Print to check
 
 
-Conclusions: this was fun
+
+### Load
+
+1. Connect to local a database
+
+2. Convert the dataframes into a compatible database
+
+3. Reconfirm that the databases have been made
+
+
